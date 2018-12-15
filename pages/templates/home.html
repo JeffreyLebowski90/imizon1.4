@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST"> {% csrf_token %}
+  <div class="form-row">
+	<div class="form-group col-md-0">
+	</div>
+    <div class="form-group col-md-4">
+      {% for field in form %}
+      {% if forloop.counter0 <= 6 %}
+          {{ field.errors }}
+          <div class="animated fadeInUp paramz">{{ field.label_tag }} </div>
+          {{ field }}
+          {% if field.help_text %}
+            <p class="help">{{ field.help_text|safe }}</p>
+          {% endif %}
+          {% endif %}
+      {% endfor %}
+<!--       <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>a</option>
+        <option>b</option>
+        <option>c</option>
+      </select> -->
+    </div>  
+    <div class="form-group col-md-0">
+    </div>
+    <div class="form-group col-md-4">
+      {% for field in form %}
+      {% if forloop.counter0 >= 7 %}
+          {{ field.errors }}
+          <div class="animated fadeInUp paramz">{{ field.label_tag }} </div>
+          {{ field }}
+          {% if field.help_text %}
+            <p class="help">{{ field.help_text|safe }}</p>
+          {% endif %}
+          {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+<div class="mx-auto" style="width: 200px;">
+  <button type="submit" class="btn btn-primary">Search</button>
+</div>
+
+</form>
+{% endblock %}

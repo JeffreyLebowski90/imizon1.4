@@ -1,0 +1,35 @@
+body{
+	/*background-image: url("http://www.robertmakgill.com/wp-content/uploads/img-oil-gas.jpg");*/
+	background-image: url("https://www.spe.org/media/filer_public/61/3b/613bbd3c-9412-43db-aac1-83abb97bc725/twa_2017_12_asseteval_hero.jpg");
+	/*background-image: url("http://www.kmpgoilgasrefinery.com/dyna-builder/page-thumbnail.html?pid=0");*/
+	/*background-size: 120%;*/
+	background-position: right;
+	/*background-repeat: no-repeat;*/
+	/*background-image: url(example.jpg);*/
+/*	background-color: #0f121f;
+	background-repeat-y: no-repeat;*/
+
+	overflow-x: hidden;
+}
+
+.paramz{
+	color: #fff;
+	font-style: 10;
+	font-size: 115%;
+	font: bold 28px/26px Ubuntu, serif;
+	/*font-family: Ubuntu;*/
+}
+
+/*body*{
+	font-family: Ubuntu;
+}
+
+h1, h2, h3, h4, h5{
+	font-weight: normal;
+	margin: 0;
+}
+
+a, a:hover, a:visited{
+	color #fff;
+	text-decoration: none;
+}*/
